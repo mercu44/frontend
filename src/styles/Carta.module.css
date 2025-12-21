@@ -1,0 +1,86 @@
+
+
+.wrap{
+  margin:0;
+  padding: 0;
+  background: url('../../public/fotos/foto4.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+
+.carta{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 800px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    padding: 20px 60px;
+    background-color: rgba(0, 0, 0, 0.61);
+
+  }
+  
+  .titulo {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 120px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: white;
+  }
+  
+  .subtitulo {
+    font-size: 28px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: 300;
+    color: white;
+  }
+  
+  .item {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  }
+  .header{
+    display:flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .nombre {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: white;
+    max-width: 70%;
+  }
+  
+  .precio {
+    font-size: 17px;
+    font-weight: 300;
+    color: white;
+    white-space: nowrap;
+  }
+  
+  .desc {
+    font-size: 15px;
+    margin-top: 4px;
+    color: #d6d6d6;
+    font-weight: 300;
+    padding-left: 5px;
+    line-height: 1.5;
+    opacity: 0.9;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .precio {
+      align-self: flex-end;
+      margin-top: 4px;
+    }
+  }

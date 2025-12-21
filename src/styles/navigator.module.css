@@ -1,0 +1,128 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: transparent;  /* Fondo transparente */
+    z-index: 1;
+    width: 100%;
+
+}
+
+.logo {
+    width: 300px; /* Ajusta el tamaño del logo */
+    height: auto;
+    position: absolute;  /* Posición absoluta */
+    top: 50%;            /* Centrado vertical */
+    left: 48%;           /* Centrado horizontal */
+    transform: translate(-50%, -50%); /* Ajuste fino para centrar */
+    cursor: pointer;
+    z-index: 101;
+
+}
+
+.button {
+    background: transparent; /* Fondo transparente */
+    border: 1px solid white; /* Sin borde */
+    color: white; /* Color del texto, ajusta si es necesario */
+    padding: 15px 30px; /* Espaciado interno */
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 101;
+    transition: 0.2s ease-in-out;
+    position: absolute;
+    top: 50%;            /* Centrado vertical */
+    right: 5%;           /* Centrado horizontal */
+    transform: translate(-50%, -50%); /* Ajuste fino para centrar */
+}
+.button:hover{
+    background-color: white;
+    color: rgb(12, 12, 12)
+}
+
+.container button:nth-child(2) {
+    margin: 0 auto;
+}
+
+
+
+.languageSelector {
+    display: flex;
+    align-items: center;
+    z-index: 101;
+}
+
+.languageSelector select {
+    margin: 40px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.bar {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.menu {
+    position: fixed;
+    left: -300px; /* Menú oculto por defecto */
+    top: 0;
+    width: 250px;
+    height: 100%;
+    padding: 30px;
+    transition: 0.3s ease-in-out;
+    z-index: 101;
+}
+
+.menuOpen {
+    left: 0; /* Cuando se abre, el menú se mueve a la izquierda */
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    margin: 20px 0;
+
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+.menu ul li a:hover {
+    color: rgb(178, 178, 178);
+    transition: 0.25s ease-in-out;
+    
+}
+/* Fondo difuso cuando el menú está abierto */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3); /* Fondo oscuro difuso */
+    backdrop-filter: blur(10px); /* Filtro de desenfoque del fondo */
+    z-index: 100; /* Asegura que el overlay esté encima del contenido */
+}
