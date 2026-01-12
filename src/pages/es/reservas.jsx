@@ -26,20 +26,30 @@ function Reservas() {
     }, []);
 
     return (
+        // CONTENEDOR GENERAL
         <div className={styles.container}>
+            {/* Navegador */}
             <div className={styles.navigator}>
                 <Navigator />
             </div>
+            {/* Imagen de fondo landing */}
             <div className={styles.backgroundContainer}>
                 <img src="/fotos/alfrescoPatio5.jpg" className={styles.backgroundImage} />
                 <h1>Reservas</h1>
             </div>
+            {/* Contenedor 1 */}
             <div className={styles.content}>
+
+                {/* Contenedor 2 */}
                 <div className={styles.section1}>
+
+                    {/* Mitad Foto */}
                     <div className={styles.subsection2}>
                         <img src="/fotos/colage2.png" className={styles.image2} />
 
                     </div>
+                    
+                    {/* Mitad Formulario */}
                     <div className={styles.subsection1}>
                         <div className={styles.formulario}>
                             <form >

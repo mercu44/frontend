@@ -37,9 +37,8 @@
 
 /* Contenedor que envuelve todo el contenido de la página */
 .content {
-    margin-top: 20px
-    ;
-    color: rgb(43, 43, 43);
+    margin-top: 20px;
+    color: rgb(41, 41, 41);
     font-size: 18px;
     line-height: 1.6;
     display: flex;
