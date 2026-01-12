@@ -29,7 +29,7 @@ function Navigator() {
                     <li><a href="">Gastronomía</a></li>
                     <li><a href="/carta">Menú</a></li>
                     <li><a href="#">Sobre nosotros</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="/contacto">Contacto</a></li>
                 </ul>
             </div>
 
