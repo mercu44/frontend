@@ -26,9 +26,8 @@ function Navigator() {
             {/* Menú desplegable */}
             <div className={`${styles.menu} ${isMenuOpen ? styles.menuOpen : ''}`}>
                 <ul>
-                    <li><a href="">Gastronomía</a></li>
+                    <li><a href="/gastronomia">Gastronomía</a></li>
                     <li><a href="/carta">Menú</a></li>
-                    <li><a href="#">Sobre nosotros</a></li>
                     <li><a href="/contacto">Contacto</a></li>
                 </ul>
             </div>
